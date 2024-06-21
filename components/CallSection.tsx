@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Button } from "./ui/button";
 import {
   DocumentIcon,
@@ -9,7 +10,7 @@ import {
 const CallSection = () => {
   return (
     <section id="call">
-      <div className="mb-32 mt-20 mx-20">
+      <div className="mb-16 mt-20 mx-20">
         <div className="w-full flex justify-center">
           <h1 className="text-4xl mb-6 mt-10 font-bold tracking-tight bg-gradient-to-t from-[#ED0000] to-[#FF4141] text-transparent bg-clip-text">
             Convocatoria 2024-2025
@@ -38,21 +39,38 @@ const CallSection = () => {
               Aplica y Contáctanos
             </h2>
             <div className="flex flex-col">
-              <Button className="mb-3 rounded-2xl bg-purple-950 hover:bg-purple-950 hover:bg-opacity-80 mr-3 py-6 w-48">
-                <DocumentIcon width={20} className="mr-2" />
-                <p className="text-lg tracking-tight font-semibold">
-                  Google Forms
+              <Button className="mb-3 rounded-2xl  bg-gray-800 hover:bg-gray-700 transition mr-3 py-6 w-48">
+                <Image
+                  src={"/images/forms_logo.png"}
+                  alt="Google Forms"
+                  width={19}
+                  height={20}
+                />
+                <p className="ml-2 text-lg tracking-tight font-semibold">
+                  Forms
                 </p>
               </Button>
-              <Button className="mb-3 rounded-2xl bg-pink-600 hover:bg-pink-600 hover:bg-opacity-80 mr-3 py-6 w-48">
-                <InboxIcon width={20} className="mr-2" />
-                <p className="text-lg tracking-tight font-semibold">
+              <Button className="mb-3 rounded-2xl bg-gray-800 hover:bg-gray-700 transition mr-3 py-6 w-48">
+                <Image
+                  src={"/images/instagram_logo.png"}
+                  alt="Instagram"
+                  width={22}
+                  height={22}
+                />
+                <p className="ml-2 text-lg tracking-tight font-semibold">
                   Instagram
                 </p>
               </Button>
-              <Button className="mb-3 rounded-2xl bg-blue-600 hover:bg-blue-600 hover:bg-opacity-80 mr-3 py-6 w-48">
-                <ChatBubbleBottomCenterIcon width={20} className="mr-2" />
-                <p className="text-lg tracking-tight font-semibold">LinkedIn</p>
+              <Button className="mb-3 rounded-2xl bg-gray-800 hover:bg-gray-700 transition mr-3 py-6 w-48">
+                <Image
+                  src={"/images/linkedin_logo.png"}
+                  alt="LinkedIn"
+                  width={22}
+                  height={22}
+                />
+                <p className="ml-2 text-lg tracking-tight font-semibold">
+                  LinkedIn
+                </p>
               </Button>
             </div>
           </div>

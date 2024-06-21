@@ -1,8 +1,11 @@
 import AboutSection from "@/components/AboutSection";
 import CallSection from "@/components/CallSection";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
+import MembersSection from "@/components/MembersSection";
 import NavBar from "@/components/NavBar";
 import ResultsSection from "@/components/ResultsSection";
+import SponsorshipTable from "@/components/SponsorshipTable";
 
 export default function Home() {
   return (
@@ -21,9 +24,12 @@ export default function Home() {
       >
         <div className="container mx-auto">
           <AboutSection />
+          <MembersSection />
           <ResultsSection />
           <CallSection />
+          <SponsorshipTable />
         </div>
+        <Footer />
       </div>
     </main>
   );
