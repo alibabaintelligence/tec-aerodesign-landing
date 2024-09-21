@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import NavBar from "@/components/NavBar";
 import ResultsSection from "@/components/ProjectsSection";
+import ProposalSection from "@/components/ProposalSection";
 import SponsorshipTable from "@/components/SponsorshipTable";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       >
         <div className="container mx-auto">
           <AboutSection />
+          <ProposalSection />
         </div>
         <Footer />
       </div>
