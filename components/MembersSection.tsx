@@ -78,9 +78,9 @@ const MembersSection = () => {
   return (
     <section id="members">
       <div className="mb-16 mt-24 mx-20">
-        <div className="w-full flex justify-center">
-          <h1 className="text-4xl mb-6 mt-10 font-bold tracking-tight bg-gradient-to-t from-[#ED0000] to-[#FF4141] text-transparent bg-clip-text">
-            Miembros
+        <div className="w-full flex justify-start">
+          <h1 className="text-5xl mb-6 mt-10 font-bold tracking-tight bg-gradient-to-t from-[#ED0000] to-[#FF4141] text-transparent bg-clip-text">
+            Our Team
           </h1>
         </div>
         <p className="text-black text-lg font-semibold tracking-tight">
@@ -89,7 +89,10 @@ const MembersSection = () => {
           consectetur adipiscing elit. Aliquam sollicitudin sit amet odio nec
           pretium.
         </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 items-center pt-14 px-4 place-items-center">
+        <h2 className="text-3xl mb-8 mt-10 font-bold tracking-tight bg-gradient-to-t from-[#ED0000] to-[#FF4141] text-transparent bg-clip-text">
+          Our Members
+        </h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 items-center px-4 place-items-center">
           {membersData.map((member) => (
             <MembersCard
               key={member.id}
